@@ -1,0 +1,11 @@
+clear all;
+close all;
+
+
+% INPUT
+total_time = 5; % years
+dt = 365 ; %number of months in a year
+nsteps = total_time*dt;
+nstates = 128;
+
+trans = zeros(nstates,nstates); % transition matrix
